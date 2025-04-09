@@ -7,10 +7,10 @@
   "type": "commonjs",
   "main": "server.ts",
   "scripts": {
-    "test": "test",
     "knex": "tsx ./node_modules/knex/bin/cli.js",
     "dev": "tsx watch src/server.ts",
-    "lint": "eslint src --ext .ts --fix"
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest"
   },
   "dependencies": {
     "@fastify/cookie": "^11.0.2",
@@ -26,6 +26,7 @@
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^22.14.0",
     "eslint": "^8.57.1",
-    "tsx": "^4.19.3"
+    "tsx": "^4.19.3",
+    "vitest": "^3.1.1"
   }
 }
